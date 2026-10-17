@@ -1,0 +1,54 @@
+-- SQL Query to create and import data from csv files:
+
+
+
+-- credit card project --
+
+-- create data base credit card project --
+create database credit_card_project;
+show databases;
+use credit_card_project;
+
+-- create two tables for credit card details and customers details
+-- create tables for credit_card(cc) table --
+
+create table cc_info ( Client_Num int, Card_category varchar(40) , Anual_fees int, Activation_30_days int , 
+Customer_Acq_cost int, Week_start_date date, Week_Num varchar(40), Qtr varchar(10), Current_Year int, Credit_limit decimal(10,3), 
+Total_Revolving_Bal int,Total_trans_Amt int, Total_Trans_Vol int, Avg_Utliization_Ratio decimal(10,2), Use_chip varchar(40), Exp_Typee varchar(80),
+ Intrest_Earned decimal(10,2), Delinquent_Acc varchar(5));
+ 
+ 
+-- create table for cutomer i.e cust_info --
+
+create table cust_info ( Client_Num int, Customer_Age int , Gender varchar(4), Dependent_Count int , Educational_Level varchar(40), 
+Marital_status varchar (40),State_id varchar(40),  Zip_Code varchar(40), Car_Owner varchar(4), House_owner varchar(4), Personal_loan varchar(4),
+Contact varchar(40), Customer_Job varchar(40), Income int, Cust_Satisfaction_Score int);
+ 
+ -- to seee table info credit card --
+ select * from cc_info;
+ 
+ -- to seee table info customer --
+ select * from cust_info;
+ 
+-- Import_ csv file click on table left side import wizard -- 
+ 
+ 
+ -- after desig power bi dashboard --
+ -- if client forgot to give you current week data  then follow following step
+ 
+ -- clean the required data format date yyyy-mm-dd --
+ 
+ use  credit_card_project;
+ 
+ -- insert Record in in credit card info i.e cc_info --
+ 
+ 
+ -- Import_ csv file click on table left side import wizard -- 
+
+
+ -- to seee table info credit card --
+ select * from cc_info;
+ 
+ -- to seee table info customer --
+ select * from cust_info;
+ 
